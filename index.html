@@ -3,44 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salvador Pasquier - Connect with Me</title>
+    <title>Salvador Pasquier</title>
     <style>
+        :root {
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+            --accent-color: #2c3e50;
+            --link-hover: #3498db;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f4f4f4;
         }
-        h1 {
-            color: #333;
-            margin-bottom: 30px;
-        }
-        a {
-            display: block; /* Makes the link take up its own line */
-            margin: 15px 0;
-            padding: 10px 20px;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            text-decoration: none; /* Removes the default underline */
-            color: #007bff; /* Sets a nice link color */
-            border-radius: 5px;
-            width: 250px; /* Gives the links a fixed width */
+
+        .container {
             text-align: center;
-            transition: background-color 0.3s;
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 90%;
         }
+
+        h1 {
+            margin-bottom: 0.5rem;
+            color: var(--accent-color);
+            font-size: 2.5rem;
+        }
+
+        p {
+            margin-bottom: 2rem;
+            color: #666;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: var(--accent-color);
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
         a:hover {
-            background-color: #e9e9e9;
-            border-color: #aaa;
+            background-color: var(--link-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .footer {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #aaa;
         }
     </style>
 </head>
 <body>
-    <h1>Connect With Me</h1>
-    <a href="https://github.com/spasquier/" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/salvadorpasquier/" target="_blank">LinkedIn</a>
+
+    <div class="container">
+        <h1>Salvador Pasquier</h1>
+        <p>Connect with me on:</p>
+        
+        <div class="links">
+            <a href="https://github.com/spasquier/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/salvadorpasquier/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 Salvador Pasquier
+        </div>
+    </div>
+
 </body>
 </html>
